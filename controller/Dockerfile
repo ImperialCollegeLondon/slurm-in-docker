@@ -18,7 +18,7 @@ RUN yum -y install \
   bzip2 \
   expectk \
   make \
-  && wget https://sourceforge.net/projects/lmod/files/Lmod-7.7.tar.bz2 \
+  && wget http://sourceforge.net/projects/lmod/files/Lmod-7.7.tar.bz2 \
   && tar -xjvf Lmod-7.7.tar.bz2
 WORKDIR /Lmod-7.7
 RUN ./configure --prefix=/opt/apps \
