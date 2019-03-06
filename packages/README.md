@@ -36,7 +36,7 @@ $ docker build -t csg/slurm.rpms:17.11.13-2 .
 
 ### Run the image 
 
-- Specify the version of Slurm you wish to build as the environment variable `SLURM_VERSION` (default is `SLURM_VERSION=17.11.5`).
+- Specify the version of Slurm you wish to build as the environment variable `SLURM_VERSION` (default is `SLURM_VERSION=17.11.13-2`).
 - Specify the volume to which you'd like to save the resultant rpm files (maps to `/packages` of the container).
 
 
