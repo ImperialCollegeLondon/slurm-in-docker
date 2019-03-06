@@ -1,3 +1,5 @@
+# Warning - This has not been tested at Imperial.
+
 # Swarm based Slurm cluster using GlusterFS
 
 The [Slurm in Docker](https://github.com/scidas/slurm-in-docker) code has been extended to run in a distributed docker cluster using [docker swarm](https://docs.docker.com/engine/swarm/) with shared storage being managed by [GlusterFS](https://www.gluster.org).
