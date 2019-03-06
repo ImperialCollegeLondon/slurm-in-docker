@@ -1,14 +1,10 @@
 # Slurm in Docker
 
-**WORK IN PROGRESS**
-
-Use [Docker](https://www.docker.com/) to explore the various components of [Slurm](https://www.schedmd.com/index.php)
-
-This work represents a small exploratory Slurm cluster using CentOS 7 based Docker images. The intent was to learn the basics of Slurm prior to extending the concept to a more distributed environment.
+Slurm cluster using CentOS 7 based Docker images.
 
 Images include:
 
-- [Slurm 17.11.9](https://slurm.schedmd.com) - installed from [rpm packages](packages)
+- [Slurm 17.11.13-2](https://slurm.schedmd.com) - installed from [rpm packages](packages)
 - [OpenMPI 3.0.1](https://www.open-mpi.org/doc/current/) - installed from [rpm packages](packages)
 - [Lmod 7.7](http://lmod.readthedocs.io/en/latest/index.html) - installed from [distribution files](https://sourceforge.net/projects/lmod/files/)
   - [Lmod module packages for CentOS 7](https://github.com/scidas/lmod-modules-centos) - Organized for Slurm-in-Docker use
@@ -59,7 +55,6 @@ cp <user-provided-slurm.conf> home/config/slurm.conf; cp <user-provided-slurmdbd
 
 The user can then proceed as normal.
 
-TODO: Have software check validity of custom configuration files.
 
 ## Build
 
