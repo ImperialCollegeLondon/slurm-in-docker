@@ -5,7 +5,7 @@ services:
     build:
       context: ./controller
       dockerfile: Dockerfile
-    image: csg/slurm.controller:17.11.9
+    image: csg/slurm.controller:17.11.13-2
     container_name: controller
     privileged: true
     volumes:
@@ -30,7 +30,7 @@ services:
     build:
       context: ./database
       dockerfile: Dockerfile
-    image: csg/slurm.database:17.11.9
+    image: csg/slurm.database:17.11.13-2
     depends_on:
       - controller
     container_name: database
@@ -55,7 +55,7 @@ services:
     build:
       context: ./worker
       dockerfile: Dockerfile
-    image: csg/slurm.worker:17.11.9
+    image: csg/slurm.worker:17.11.13-2
     depends_on:
       - controller
     container_name: worker01
@@ -76,7 +76,7 @@ services:
     build:
       context: ./worker
       dockerfile: Dockerfile
-    image: slurm/slurm.worker:17.11.9
+    image: slurm/slurm.worker:17.11.13-2
     depends_on:
       - controller
     container_name: worker02
