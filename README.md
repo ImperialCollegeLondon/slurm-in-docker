@@ -81,7 +81,7 @@ $ docker build -t csg/slurm.rpms:17.11.13-2 .
 $ docker run --rm \
 	-e SLURM_VERSION=17.11.13-2 \
 	-v $(pwd)/rpms:/packages \
-	scidas/slurm.rpms:17.11.13-2
+	csg/slurm.rpms:17.11.13-2
 ```
 
 **Create the base Slurm image**:
