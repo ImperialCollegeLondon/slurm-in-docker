@@ -60,6 +60,30 @@ The user can then proceed as normal.
 
 Build the slurm RPM files by following the instructions in the [packages](packages) directory.
 
+### Build the image
+
+Build the docker image
+
+```
+$ cd centos-7/
+$ docker build -t csg/slurm.rpms:17.11.13-2 .
+```
+
+### Run the image 
+
+- Specify the version of Slurm you wish to build as the environment variable `SLURM_VERSION` (default is `SLURM_VERSION=17.11.13-2`).
+- Specify the volume to which you'd like to save the resultant rpm files (maps to `/packages` of the container).
+
+
+**Generate RPMs**:
+
+```
+$ docker run --rm \
+	-e SLURM_VERSION=17.11.13-2 \
+	-v $(pwd)/rpms:/packages \
+	scidas/slurm.rpms:17.11.13-2
+```
+
 **Create the base Slurm image**:
 
 Copy the `packages/centos-7/rpms` directory to the `base` directory
