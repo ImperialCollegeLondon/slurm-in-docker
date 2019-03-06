@@ -1,7 +1,7 @@
 FROM krallin/centos-tini:7
 MAINTAINER Michael J. Stealey <stealey@renci.org>
 
-ENV SLURM_VERSION=17.11.5 \
+ENV SLURM_VERSION=17.11.13-2 \
   MUNGE_UID=981 \
   SLURM_UID=982 \
   WORKER_UID=1000
